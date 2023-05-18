@@ -1,0 +1,14 @@
+input{
+    display: block;
+}
+button{
+    margin: 20px;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    height: 30px;
+    width: 50px;
+}
+button:hover{
+    cursor:pointer;
+}

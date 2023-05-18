@@ -1,0 +1,21 @@
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.todo{
+    margin: 10px;
+    background-color: yellow;
+    /* height: 300px; */
+    width: 200px;
+    border: 2px solid bisque;
+    box-shadow: 2px 2px 4px 4px salmon;
+    text-align: center;
+}
+.delete{
+    float: right;
+    right: 0;
+    top: 0;
+}

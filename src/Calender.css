@@ -1,0 +1,9 @@
+.calender{
+    margin-left: 50px;
+    height:500px;
+    width:500px;
+    background-color: rgb(89, 165, 232);
+}
+.date{
+    display: flex;
+}

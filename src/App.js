@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import  './App.css';
+import { useState } from 'react';
+import Card from './components/Card';
+import Form from './components/Form'
+import Users from './components/Users'
 
 function App() {
+const [users,setusers] =useState([{}])
+
+const addUser=(inputs)=>{
+  // setusers([inputs])
+  setusers((prev)=>{
+          return [...prev,inputs]
+        });
+}
+// if(users.length>1)
+// {
+//     setusers((prev)=>{
+//       return [...prev.users,inputs]
+//     });
+//   }
+//   else
+//   {
+//     setusers(inputs);
+//   }
+// }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+    <Card>
+      <Form user={addUser}/>
+    </Card>
+    <Users users={users}/>
+  </>
   );
 }
 

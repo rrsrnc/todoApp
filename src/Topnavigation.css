@@ -1,0 +1,13 @@
+.nav{
+    background-color: black;
+}
+.nav>a{
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+}
+.nav>a:hover{
+    color: red;
+    text-decoration: underline;
+}
